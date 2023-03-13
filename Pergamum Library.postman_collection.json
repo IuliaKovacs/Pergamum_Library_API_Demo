@@ -1,0 +1,123 @@
+{
+	"info": {
+		"_postman_id": "3d935e95-91dd-4cf2-a414-383efbf19c93",
+		"name": "Pergamum Library",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "23767276"
+	},
+	"item": [
+		{
+			"name": "Add a new book",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"id\": 6,\r\n    \"title\": \"Zy we fall for fake news\",\r\n    \"author\": \"Rob Brotherton2\" \r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/library/add",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"library",
+						"add"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Update the author of a book",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8080/library/update/1003/Iulia%20Kovacs",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"library",
+						"update",
+						"1003",
+						"Iulia%20Kovacs"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Get all books ordered by author and title",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8080/library/books",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"library",
+						"books"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Delete a book by ID",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8080/library/update/Why we fall for fake news",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"library",
+						"update",
+						"Why we fall for fake news"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Get a book by title",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8080/library/searchBy/Open",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"library",
+						"searchBy",
+						"Open"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
